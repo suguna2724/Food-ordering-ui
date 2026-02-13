@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Order Menu UI</title>
+
+<style>
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Background */
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1100px;
+    text-align:center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading Animation */
+h1{
+    font-size:34px;
+    margin-bottom:10px;
+    animation: slideDown 1s ease-in-out;
+}
+
+.subtitle{
+    color:#bbbbbb;
+    margin-bottom:30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Card */
+.card{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    transition:0.4s;
+    animation: slideUp 1.2s ease-in-out;
+}
+
+/* Card Hover Animation */
+.card:hover{
+    transform: translateY(-8px) scale(1.01);
+    box-shadow:0 15px 40px rgba(0,0,0,0.7);
+}
+
+/* Project Title */
+.card h2{
+    color:#ff9a76;
+    margin-bottom:12px;
+}
+
+/* Description */
+.card p{
+    line-height:1.6;
+    color:#dddddd;
+}
+
+/* Iframe Container */
+.iframe-container{
+    position:relative;
+    width:100%;
+    padding-top:56.25%;
+    border-radius:14px;
+    overflow:hidden;
+    margin-top:25px;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.iframe-container iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* Footer */
+.footer{
+    margin-top:25px;
+    font-size:14px;
+    color:#aaaaaa;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🍔 Food Order Menu UI Design</h1>
+    <p class="subtitle">Interactive UI Design | Modern Food Ordering Experience</p>
+
+    <div class="card">
+
+        <h2>📌 Project Overview</h2>
+
+        <p>
+            Created a single-page food ordering UI in Figma that highlights structured layout, attractive visuals, and simple item browsing to improve usability.
+        </p>
+
+        <br>
+
+
+        <div class="iframe-container">
+            <iframe 
+            src="https://embed.figma.com/design/lz8CxaN7vgG6ZT4kdogkuv/Food-order-menu--Community-?node-id=0-1&embed-host=share"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+  
+
+</div>
+
+</body>
+</html>
